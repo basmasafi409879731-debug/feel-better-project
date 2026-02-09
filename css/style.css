@@ -1,0 +1,66 @@
+:root {
+  --pink: #d63384;
+  --light-bg: #ffffff;
+  --dark-bg: #1a1a1a;
+  --dark-text: #f2f2f2;
+  --light-text: #333333;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--light-bg);
+  color: var(--light-text);
+  font-family: Tahoma, sans-serif;
+  transition: 0.3s;
+}
+
+body.dark-mode {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+}
+
+.text-pink { color: var(--pink) !important; }
+
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(#fde4ec, #fff0f6);
+}
+
+.hero h1 { color: var(--pink); }
+
+.btn-pink {
+  background: var(--pink);
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+}
+
+.btn-soft {
+  background: #f3c6d8;
+  color: #333;
+  border-radius: 25px;
+  border: none;
+}
+
+img {
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+table th {
+  background: #f8d7e5;
+  color: #333;
+}
+
+/* إخفاء قسم الخدمات قبل ظهور الـ Fade */
+#services {
+  display: none;
+}
